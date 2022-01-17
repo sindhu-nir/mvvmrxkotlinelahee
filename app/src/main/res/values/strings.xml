@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MVVMRxKotlinElahee</string>
+    <string name="title_text_route_list">Route List</string>
+    <string name="title_text_no_geofences_are_listed">No geofences are listed</string>
+    <string name="title_text_tap">Tap</string>
+    <string name="title_text_to_add">to add</string>
+</resources>
