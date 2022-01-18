@@ -4,11 +4,11 @@ import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import com.banglatrac.carcopolo.kotlin.model.GeoResponse
-import com.banglatrac.carcopolo.kotlin.networking.ApiResponse
-import com.banglatrac.carcopolo.kotlin.networking.CommonResponse
-import com.banglatrac.carcopolo.kotlin.networking.NoInternetException
-import com.banglatrac.carcopolo.kotlin.repository.TestKotRepository
+import com.btracsolutions.mvvmrxkotlinelahee.model.GeoResponse
+import com.btracsolutions.mvvmrxkotlinelahee.networking.ApiResponse
+import com.btracsolutions.mvvmrxkotlinelahee.networking.CommonResponse
+import com.btracsolutions.mvvmrxkotlinelahee.networking.NoInternetException
+import com.btracsolutions.mvvmrxkotlinelahee.repository.TestKotRepository
 import com.google.gson.Gson
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

@@ -1,4 +1,4 @@
-package com.banglatrac.carcopolo.kotlin.networking
+package com.btracsolutions.mvvmrxkotlinelahee.networking
 
 import com.banglatrac.carcopolo.kotlin.utils.NetworkConnectivityChecker
 import okhttp3.Interceptor

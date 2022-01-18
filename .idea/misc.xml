@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/drawable/ic_eye_off.xml" value="0.2212962962962963" />
         <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/drawable/search_box_bg.xml" value="0.2212962962962963" />
+        <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/drawable/selector_default_button.xml" value="0.2212962962962963" />
         <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/font/normal.xml" value="0.2212962962962963" />
+        <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/layout/activity_home.xml" value="0.14375" />
+        <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/layout/activity_otp_verify.xml" value="0.27447916666666666" />
+        <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/layout/activity_splash.xml" value="0.264" />
         <entry key="..\:/BackUp/AndroidStudioProjects/_Projects_2021/MVVMRxKotlin/app/src/main/res/layout/activity_test_kot.xml" value="0.1" />
       </map>
     </option>

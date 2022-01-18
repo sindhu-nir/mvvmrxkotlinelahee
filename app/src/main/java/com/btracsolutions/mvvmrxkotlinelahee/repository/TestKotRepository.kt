@@ -1,7 +1,7 @@
-package com.banglatrac.carcopolo.kotlin.repository
+package com.btracsolutions.mvvmrxkotlinelahee.repository
 
 import android.util.Log
-import com.banglatrac.carcopolo.kotlin.networking.RetrofitClient
+import com.btracsolutions.mvvmrxkotlinelahee.networking.RetrofitClient
 import io.reactivex.Observable
 import java.util.HashMap
 

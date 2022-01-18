@@ -10,5 +10,8 @@
     <color name="login_bg_top">#1b213b</color>
     <color name="search_box_bg_10_percent_opacity">#222740</color>
     <color name="edit_text_colot">#5f5d70</color>
+    <color name="blue">#0420d9</color>
+    <color name="colorPrimaryDark">#0C95CA</color>
+    <color name="colorPrimary">#0C95CA</color>
 
 </resources>

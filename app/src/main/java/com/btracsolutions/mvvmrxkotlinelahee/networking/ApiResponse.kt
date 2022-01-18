@@ -1,4 +1,4 @@
-package com.banglatrac.carcopolo.kotlin.networking
+package com.btracsolutions.mvvmrxkotlinelahee.networking
 
 import androidx.annotation.Keep
 
@@ -68,11 +68,5 @@ class ApiResponse private constructor(
         }
     }
 
-    @Keep
-    enum class Status {
-        SUCCESS,
-        FAILED,
-        ERROR,
-        LOADING
-    }
+
 }

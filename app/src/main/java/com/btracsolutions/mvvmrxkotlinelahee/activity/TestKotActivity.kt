@@ -9,11 +9,12 @@ import android.view.View
 import android.widget.ProgressBar
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
-import com.banglatrac.carcopolo.kotlin.model.GeoResponse
-import com.banglatrac.carcopolo.kotlin.networking.ApiResponse
 import com.banglatrac.carcopolo.kotlin.utils.NetworkConnectivityChecker
 import com.btracsolutions.mvvmrxkotlinelahee.preferenes.MySharedPref
 import com.btracsolutions.mvvmrxkotlinelahee.R
+import com.btracsolutions.mvvmrxkotlinelahee.model.GeoResponse
+import com.btracsolutions.mvvmrxkotlinelahee.networking.ApiResponse
+import com.btracsolutions.mvvmrxkotlinelahee.networking.Status
 
 
 class TestKotActivity : AppCompatActivity() {
@@ -21,7 +22,6 @@ class TestKotActivity : AppCompatActivity() {
 
     private lateinit var rvGeofence: RecyclerView
     private lateinit var progressBar: ProgressBar
-    lateinit var mySharedPref: MySharedPref
     lateinit var userApiHash: String
 
     private lateinit var andRegulationViewModel: TestKotViewModel
@@ -59,8 +59,8 @@ class TestKotActivity : AppCompatActivity() {
     private fun initView() {
         rvGeofence= findViewById(R.id.list_geofence)
         progressBar= findViewById(R.id.progressBar)
-        mySharedPref= MySharedPref(this)
-        userApiHash= mySharedPref.getUserApiHash()!!
+      //  mySharedPref= MySharedPref(this)
+        userApiHash= MySharedPref.getUserApiHash()!!
         Log.d("ApiTesting", "apiHash: $userApiHash")
         progressBar.visibility= View.GONE
         NetworkConnectivityChecker.initConnectionManager(this)
@@ -75,11 +75,11 @@ class TestKotActivity : AppCompatActivity() {
     private fun consumeResponse(apiResponse: ApiResponse) {
         Log.d("ApiTesting", "consumeResponse")
         when (apiResponse.status) {
-            ApiResponse.Status.LOADING -> {
+            Status.LOADING -> {
                 //showProgressBar()
                 progressBar.visibility= View.VISIBLE
             }
-            ApiResponse.Status.SUCCESS -> {
+            Status.SUCCESS -> {
               //  hideProgressBar()
                 progressBar.visibility= View.GONE
 
@@ -90,7 +90,7 @@ class TestKotActivity : AppCompatActivity() {
                 }
             }
 
-            ApiResponse.Status.FAILED, ApiResponse.Status.ERROR -> {
+            Status.FAILED, Status.ERROR -> {
                 progressBar.visibility= View.GONE
                 apiResponse.message?.let {
                     //notifyLongMessage(it)

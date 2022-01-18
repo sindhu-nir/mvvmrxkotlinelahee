@@ -1,6 +1,7 @@
-package com.banglatrac.carcopolo.kotlin.networking
+package com.btracsolutions.mvvmrxkotlinelahee.networking
 
 
+import com.btracsolutions.mvvmrxkotlinelahee.utils.ApiConstants
 import io.reactivex.Observable
 import io.reactivex.Single
 import okhttp3.MultipartBody
@@ -15,6 +16,13 @@ interface ApiService {
             @Query("lang") lang: String,
             @Query("user_api_hash") userApiHash: String
 
+
+    ): Observable<Object>
+
+    @POST(ApiConstants.LOGIN)
+    fun executeLoginRequest(
+            @Query("email") lang: String,
+            @Query("password") userApiHash: String
 
     ): Observable<Object>
 

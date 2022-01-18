@@ -1,4 +1,4 @@
-package com.banglatrac.carcopolo.kotlin.networking
+package com.btracsolutions.mvvmrxkotlinelahee.networking
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -38,7 +38,7 @@ object RetrofitClient {
     }
 
     // This is the fallback URL for this application
-    private var baseURL = "https://gps.elahee.com/api/"
+    private var baseURL = "https://www.purebasic.com.bd/api/"
 
     private var retrofit: Retrofit = getNewInstance(baseURL)
 

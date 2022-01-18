@@ -1,29 +1,40 @@
 package com.btracsolutions.mvvmrxkotlinelahee.preferenes
 
+import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
 import com.btracsolutions.mvvmrxkotlinelahee.preference.PrefKey
 
-class MySharedPref(_context: Context?) {
+object MySharedPref {
 
-    lateinit var context: Context
     lateinit var sharedPreferences: SharedPreferences
     lateinit var editor: SharedPreferences.Editor
 
-    init {
-        context= _context!!
-        sharedPreferences = this.context!!.getSharedPreferences(PrefKey.APP_PREFERENCE, Context.MODE_PRIVATE)
-
+    fun initAppPreference(application: Application) {
+        sharedPreferences =
+            application.getSharedPreferences(PrefKey.APP_PREFERENCE, Context.MODE_PRIVATE)
+        editor = sharedPreferences.edit()
     }
 
-    fun getLoginStatus(): Boolean {
-        return sharedPreferences!!.getBoolean(PrefKey.IS_LOGGEDIN, false)
+    fun setBoolean(key: String?, value: Boolean) {
+        editor.putBoolean(key, value)
+        editor.commit()
     }
 
-    fun setLoginStatus(status: Boolean) {
-        editor = sharedPreferences!!.edit()
-        editor?.putBoolean("isLogin", status)
-        editor?.commit()
+    fun getBoolean(key: String?): Boolean {
+        return sharedPreferences.getBoolean(key, false)
+    }
+
+    fun setString(key: String?, value: String?) {
+            editor.putString(key, value)
+            editor.commit()
+
+    }
+    fun getString(key: String?):String? {
+        var value = sharedPreferences.getString(key, "")
+        return  value
+
+
     }
 
     fun getUserApiHash(): String? {
